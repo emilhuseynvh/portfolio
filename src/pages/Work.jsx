@@ -1,7 +1,6 @@
 import React from 'react'
 import WorkCard from '../Component/Card/WorkCard'
 import { project } from '../data/project';
-console.log(project);
 
 
 const Work = () => {

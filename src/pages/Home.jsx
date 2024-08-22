@@ -24,8 +24,8 @@ const Home = () => {
           </div>
           <div className='w-full lg:w-1/2 lg:mt-0 mt-4'>
             <Slider />
-            <div onClick={() => navigate('/credential')} className='lg:flex block gap-4 '>
-              <div className='mb-4 lg:mb-0'><Credentials /></div>
+            <div  className='lg:flex block gap-4 '>
+              <div onClick={() => navigate('/credential')} className='mb-4 lg:mb-0'><Credentials /></div>
               <div><Projects /></div>
             </div>
           </div>
