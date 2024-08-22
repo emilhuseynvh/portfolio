@@ -13,9 +13,9 @@ const CredentialsCard = () => {
         });
     }, []);
     return (
-        <div data-aos="zoom-in" className='card pt-6 px-6 pb-[34px] w-[370px] sticky top-0'>
+        <div data-aos="zoom-in" className='card pt-6 px-6 pb-[34px] relative w-full md:w-[370px]'>
             <div className='img-box rounded-[30px] mb-10'>
-                <img className='rounded-[30px]' src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/me.png" />
+                <img className='rounded-[30px] object-cover w-full' src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/me.png" />
             </div>
             <h4 className='text-white font-medium text-[28px] text-center'>Emil Huseynov</h4>
             <p className='text-[#BCBCBC] opacity-50 mb-[34px] text-center'>@emilhuseynvh</p>

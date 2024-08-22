@@ -16,7 +16,7 @@ const CredentialsEducation = () => {
             <h4 className='mb-[37px] text-white text-[18px]'>EDUCATION</h4>
             {education.map((item, i) => {
                 return (
-                    <div data-aos="zoom-in" className='pb-[110px]'>
+                    <div key={i} data-aos="zoom-in" className='pb-[110px]'>
                         <p className='text-[#BCBCBC] opacity-60 text-base font-medium mb-[8px]'>{item.year}</p>
                         <h4 className='text-lg text-[#5B78F6]'>{item.name}</h4>
                         <h6 className='text-sm text-[#BCBCBC] font-normal opacity-60 mb-[8px]'>{item.company}</h6>

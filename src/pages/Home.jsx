@@ -25,7 +25,7 @@ const Home = () => {
           <div className='w-full lg:w-1/2 lg:mt-0 mt-4'>
             <Slider />
             <div  className='lg:flex block gap-4 '>
-              <div onClick={() => navigate('/credential')} className='mb-4 lg:mb-0'><Credentials /></div>
+              <div onClick={() => navigate('credential')} className='mb-4 lg:mb-0'><Credentials /></div>
               <div><Projects /></div>
             </div>
           </div>
@@ -35,7 +35,7 @@ const Home = () => {
           <div className=' w-full lg:w-1/4'>
             <GFont />
           </div>
-          <div className=' w-full lg:w-1/2 mt-4 lg:mt-0'>
+          <div onClick={() => navigate('offer')} className=' w-full lg:w-1/2 mt-4 lg:mt-0'>
             <Offer />
           </div>
           <div className='lg:w-1/4 w-full'>

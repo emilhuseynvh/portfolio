@@ -13,9 +13,11 @@ module.exports = {
       screens: {
         'medium': '919px',
         'base' : '500px',
+        'm' : '850px',
         'xs' : '400px',
         'xxs' : '350px',
-        'normal' : '750px'
+        'normal' : '750px',
+        'xl' : '1100px'
       },
     },
   },
