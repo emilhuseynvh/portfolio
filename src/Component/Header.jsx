@@ -30,12 +30,12 @@ const Header = () => {
       <div className='w-full h-[67px] md:hidden'>
 
       </div>
-        {/* HAMBURGER MENU */}
+      {/* HAMBURGER MENU */}
       <div className={` ${show ? '-translate-x-full' : 'translate-x-0'} w-full pt-20 base:w-[400px] bg-[#0F0F0F] text-base flex flex-col top-0 duration-300 pl-5 fixed left-0 h-full z-40`}>
-          <Link onClick={() => setShow(true)} to='/' className={`pb-5 cursor-pointer ${location.pathname === '/' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Home</Link>
-          <Link onClick={() => setShow(true)} to='/about' className={`pb-5 cursor-pointer ${location.pathname === '/about' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>About</Link>
-          <Link onClick={() => setShow(true)} to='/work' className='pb-5 cursor-pointer text-[#9f9f9f] hover:text-white_'>Works</Link>
-          <Link onClick={() => setShow(true)} to='/contact' className='pb-5 cursor-pointer text-[#9f9f9f] hover:text-white_'>Contact</Link>
+        <Link onClick={() => setShow(true)} to='/' className={`pb-5 cursor-pointer ${location.pathname === '/' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Home</Link>
+        <Link onClick={() => setShow(true)} to='/about' className={`pb-5 cursor-pointer ${location.pathname === '/about' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>About</Link>
+        <Link onClick={() => setShow(true)} to='/work' className='pb-5 cursor-pointer text-[#9f9f9f] hover:text-white_'>Works</Link>
+        <Link onClick={() => setShow(true)} to='/contact' className='pb-5 cursor-pointer text-[#9f9f9f] hover:text-white_'>Contact</Link>
       </div>
     </>
   );

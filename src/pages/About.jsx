@@ -7,8 +7,12 @@ import Education from '../Component/Card/Education';
 import AboutBox from '../Component/Card/AboutBox';
 import WorkTogether from '../Component/Card/WorkTogether';
 import Credentials from '../Component/Card/Credentials';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+
+  const navigate = useNavigate()
+
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -45,11 +49,11 @@ const About = () => {
           <div className='w-full medium:w-1/2 lg:w-1/3 mt-0 lg:mt-4'>
             <AboutBox />
           </div>
-          <div className='w-full medium:w-1/2 lg:w-2/3 mt-4'>
+          <div onClick={() => navigate('/contact')} className='w-full medium:w-1/2 lg:w-2/3 mt-4'>
             <WorkTogether />
           </div>
         </div>
-        <div className="w-full lg:w-1/4 mt-4">
+        <div onClick={() => navigate('/credential')} className="w-full lg:w-1/4 mt-4">
           <Credentials />
         </div>
       </div>
