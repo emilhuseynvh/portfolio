@@ -16,8 +16,8 @@ const GFonf = () => {
                 <img src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/gfonts.png" />
             </div>
             <div>
-                <h5>BLOG</h5>
-                <h2>GFonts</h2>
+                <h5>MY SKILLS</h5>
+                <h2>Skills</h2>
             </div>
             <div className='card-icon'>
                 <img src="assets/img/icon.svg"  />
