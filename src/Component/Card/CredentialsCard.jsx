@@ -20,10 +20,10 @@ const CredentialsCard = () => {
             <h4 className='text-white font-medium text-[28px] text-center'>Emil Huseynov</h4>
             <p className='text-[#BCBCBC] opacity-50 mb-[34px] text-center'>@emilhuseynvh</p>
             <div className=' gap-[10px] mb-9 flex justify-center'>
-                <Link className='credential-social-icon'><FaLinkedinIn /></Link>
-                <Link className='credential-social-icon' ><FaInstagram /></Link>
-                <Link className='credential-social-icon'><FaGithub /></Link>
-                <Link className='credential-social-icon'><FaWhatsapp /></Link>
+                <Link target='_blank' to='https://www.linkedin.com/in/emilhsynvh' className='credential-social-icon'><FaLinkedinIn /></Link>
+                <Link target='_blank' to='https://www.instagram.com/emilhuseynvh?igsh=Z3JzeXRzcHFxeGVz' className='credential-social-icon' ><FaInstagram /></Link>
+                <Link target='_blank' to='https://github.com/emilhuseynvh' className='credential-social-icon'><FaGithub /></Link>
+                <Link target='_blank' to='https://wa.me/qr/OUV3UFVVSDIGL1' className='credential-social-icon'><FaWhatsapp /></Link>
             </div>
             <button className='w-full text-white duration-300 py-3 px-10 font-medium text-base rounded-2xl bg-dark hover:text-card_color hover:bg-white relative z-10'>Contact Me</button>
         </div>

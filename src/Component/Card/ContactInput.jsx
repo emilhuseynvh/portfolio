@@ -17,17 +17,17 @@ const ContactInput = () => {
 
     const formik = useFormik({
         initialValues: {
-            name: '',
-            email: '',
+            from_name: '',
+            user_email: '',
             subject: '',
             message: '',
         },
         validationSchema: Yup.object({
-            name: Yup.string()
+            from_name: Yup.string()
                 .min(3, 'Name must be at least 3 characters')
                 .max(30, 'Name must be 30 characters or less')
                 .required('Required'),
-            email: Yup.string()
+            user_email: Yup.string()
                 .email('Invalid email address')
                 .required('Required'),
             subject: Yup.string()
@@ -60,17 +60,17 @@ const ContactInput = () => {
             <form ref={form} onSubmit={formik.handleSubmit}>
                 <div className='mb-4 relative z-[2]'>
                     <input
-                        name='user_name'
+                        name='from_name'
                         placeholder='Name *'
                         className='outline-none'
                         size={40}
                         minLength={3}
                         maxLength={50}
                         type="text"
-                        {...formik.getFieldProps('name')}
+                        {...formik.getFieldProps('from_name')}
                     />
-                    {formik.touched.name && formik.errors.name ? (
-                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.name}</div>
+                    {formik.touched.from_name && formik.errors.from_name ? (
+                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.from_name}</div>
                     ) : null}
                 </div>
                 <div className='mb-4 relative z-[2]'>
@@ -79,14 +79,15 @@ const ContactInput = () => {
                         placeholder='Email *'
                         className='outline-none'
                         type="text"
-                        {...formik.getFieldProps('email')}
+                        {...formik.getFieldProps('user_email')}
                     />
-                    {formik.touched.email && formik.errors.email ? (
-                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.email}</div>
+                    {formik.touched.user_email && formik.errors.user_email ? (
+                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.user_email}</div>
                     ) : null}
                 </div>
                 <div className='mb-4 relative z-[2]'>
                     <input
+                        name='subject'
                         placeholder='Your Subject *'
                         className='outline-none'
                         type="text"
