@@ -17,7 +17,8 @@ const AboutInfo = () => {
             </div>
             <div className='pt-[80px] base:pt-[115px] pr-[80px] pb-[30px] pl-[30px]'>
                 <h1 className='text-white text-[26px] font-medium base:text-4xl'>Emil Huseynov</h1>
-                <p className='text-white opacity-80 text-base '>I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.</p>
+                <p className='text-white opacity-80 text-base '>
+                As a Software Developer, I build and maintain software applications with expertise in front-end and back-end development. I focus on problem-solving and delivering solutions that enhance user satisfaction and support business growth.</p>
             </div>
             <div className='card-icon'>
                 <img src="assets/img/icon.svg" />
