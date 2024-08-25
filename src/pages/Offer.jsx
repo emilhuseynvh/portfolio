@@ -25,10 +25,9 @@ const Offer = () => {
         <div data-aos="zoom-in" className='pt-[91px] card px-[75px] pb-[90px] m:mb-0 mb-12'>
           <ul className=' flex flex-col gap-36'>
             <img className='bg-img' src="assets/img/card-bg.png" alt="Backgorund Image" />
-            <li className='text-base font-normal flex items-center gap-[50px] text-white '><CiCamera className='text-white text-[30px] block font-medium' /> PHOTOGRAPHY</li>
-            <li className='text-base font-normal flex items-center gap-[50px] text-white '><PiPencilCircle className='text-white text-[30px] block font-medium' /> WEB DESIGNING</li>
-            <li className='text-base font-normal flex items-center gap-[50px] text-white '><IoIosColorFilter className='text-white text-[30px] block font-medium' /> BRANDING</li>
-            <li className='text-base font-normal flex items-center gap-[50px] text-white '><MdDeveloperMode className='text-white text-[30px] block font-medium' /> DEVELOPMENT</li>
+           {offer?.map(item => {
+            return  <li key={item.id} className='text-base font-normal flex items-center gap-[50px] text-white '><img className='md:w-10 md:h-10 w-8 h-8' src={item.icon} alt={item.title} /> {item.short_title}</li>
+           })}
           </ul>
         </div>
         <div className='w-full'>

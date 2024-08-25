@@ -16,8 +16,8 @@ const Number = () => {
                 <p className='text-xs text-[#BCBCBC] opacity-50'>YEARS <br /> EXPERIENCE</p>
             </div>
             <div className='number-element mb-4 sm:mb-0'>
-                <h1 className='text-white text-center mb-[13px] text-[34px] relative z-[2] font-medium'>01</h1>
-                <p className='text-xs text-[#BCBCBC] opacity-50'>YEARS <br /> EXPERIENCE</p>
+                <h1 className='text-white text-center mb-[13px] text-[34px] relative z-[2] font-medium'>02</h1>
+                <p className='text-xs text-[#BCBCBC] opacity-50'>COMMON <br /> EXPERIENCE</p>
             </div>
             <div className='number-element mb-4 sm:mb-0'>
                 <h1 className='text-white text-center mb-[13px] text-[34px] relative z-[2] font-medium'>16</h1>
