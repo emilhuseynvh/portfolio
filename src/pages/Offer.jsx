@@ -8,7 +8,6 @@ import AboutBox from '../Component/Card/AboutBox';
 import WorkTogether from '../Component/Card/WorkTogether';
 import Credentials from '../Component/Card/Credentials';
 import Aos from 'aos';
-console.log(offer);
 
 
 const Offer = () => {

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import { experince } from '../../data/experience'
 import Aos from 'aos';
-console.log(experince);
 
 
 const CredentialsExperience = () => {

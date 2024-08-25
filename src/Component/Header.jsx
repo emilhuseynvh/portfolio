@@ -18,7 +18,7 @@ const Header = () => {
             <Link to='/work' className={`cursor-pointer duration-300 ${location.pathname === '/work' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Works</Link>
             <Link to='/contact' className={`text-[#9f9f9f] hover:text-white_ cursor-pointer duration-300 ${location.pathname === '/contact' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'} `}>Contact</Link>
           </ul>
-          <button onClick={() => navigate('/contact')} className='bg-dark text-white_ hover:text-dark hover:bg-white duration-300 hidden md:block text-base font-medium py-3 px-[33px] rounded-2xl'> Let's talk </button>
+          <a href='assets/pdf/cv.pdf' download className='bg-dark text-white_ hover:text-dark hover:bg-white duration-300 hidden md:block text-base font-medium py-3 px-[33px] rounded-2xl'> Download my CV </a>
           <div onClick={() => setShow(!show)} className="flex md:hidden flex-col gap-[6px] cursor-pointer" >
             <img className={`select-none transition-transform duration-300 ${!show ? "rotate-45 translate-y-[6px]" : "rotate-0"}`} src='assets/img/rectangle.svg' alt="" />
             <img className={`select-none transition-transform duration-300 ${!show ? 'opacity-0' : "opacity-100"}`} src='assets/img/rectangle.svg' alt="" />

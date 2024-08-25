@@ -26,13 +26,13 @@ const Home = () => {
             <Slider />
             <div  className='lg:flex block gap-4 '>
               <div onClick={() => navigate('credential')} className='mb-4 lg:mb-0'><Credentials /></div>
-              <div><Projects /></div>
+              <div onClick={() => navigate('/work')}><Projects /></div>
             </div>
           </div>
         </div>
         {/*   S E C O N D   L I N E  */}
         <div className='w-full mt-4 block lg:flex gap-4'>
-          <div className=' w-full lg:w-1/4'>
+          <div onClick={() => navigate('skills')} className=' w-full lg:w-1/4'>
             <GFont />
           </div>
           <div onClick={() => navigate('offer')} className=' w-full lg:w-1/2 mt-4 lg:mt-0'>
