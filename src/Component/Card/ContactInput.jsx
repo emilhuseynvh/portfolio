@@ -3,6 +3,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Aos from 'aos';
 import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
 const ContactInput = () => {
     useEffect(() => {
@@ -43,80 +44,79 @@ const ContactInput = () => {
             emailjs.sendForm('service_1ju507g', 'template_4tfk8jf', form.current, 'mO58qh-BVVdhvkhay')
                 .then(
                     () => {
-                        console.log('Success');
+                        toast.success('Your message has been sent.')
                         resetForm();
-                    },
-                    (error) => {
-                        console.log('FAILED...', error.text);
                     }
                 );
         },
     });
 
     return (
-        <div data-aos="zoom-in" className='card pt-[55px] w-full pr-5 pb-[30px] pl-5 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'>
-            <img className='bg-img' src="assets/img/card-bg.png" alt="Background Image" />
-            <p className='text-[44px] text-white mb-[30px]'>Let’s work <span className='text-[#5B78F6]'>together</span>.</p>
-            <form ref={form} onSubmit={formik.handleSubmit}>
-                <div className='mb-4 relative z-[2]'>
-                    <input
-                        name='from_name'
-                        placeholder='Name *'
-                        className='outline-none'
-                        size={40}
-                        minLength={3}
-                        maxLength={50}
-                        type="text"
-                        {...formik.getFieldProps('from_name')}
-                    />
-                    {formik.touched.from_name && formik.errors.from_name ? (
-                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.from_name}</div>
-                    ) : null}
+        <>
+            <div data-aos="zoom-in" className='card pt-[55px] w-full pr-5 pb-[30px] pl-5 sm:pt-10 sm:pb-10 sm:pr-10 sm:pl-10'>
+                <img className='bg-img' src="assets/img/card-bg.png" alt="Background Image" />
+                <p className='text-[44px] text-white mb-[30px]'>Let’s work <span className='text-[#5B78F6]'>together</span>.</p>
+                <form ref={form} onSubmit={formik.handleSubmit}>
+                    <div className='mb-4 relative z-[2]'>
+                        <input
+                            name='from_name'
+                            placeholder='Name *'
+                            className='outline-none'
+                            size={40}
+                            minLength={3}
+                            maxLength={50}
+                            type="text"
+                            {...formik.getFieldProps('from_name')}
+                        />
+                        {formik.touched.from_name && formik.errors.from_name ? (
+                            <div className='text-red-500 ml-2 mt-1'>{formik.errors.from_name}</div>
+                        ) : null}
+                    </div>
+                    <div className='mb-4 relative z-[2]'>
+                        <input
+                            name='user_email'
+                            placeholder='Email *'
+                            className='outline-none'
+                            type="text"
+                            {...formik.getFieldProps('user_email')}
+                        />
+                        {formik.touched.user_email && formik.errors.user_email ? (
+                            <div className='text-red-500 ml-2 mt-1'>{formik.errors.user_email}</div>
+                        ) : null}
+                    </div>
+                    <div className='mb-4 relative z-[2]'>
+                        <input
+                            name='subject'
+                            placeholder='Your Subject *'
+                            className='outline-none'
+                            type="text"
+                            {...formik.getFieldProps('subject')}
+                        />
+                        {formik.touched.subject && formik.errors.subject ? (
+                            <div className='text-red-500 ml-2 mt-1'>{formik.errors.subject}</div>
+                        ) : null}
+                    </div>
+                    <div className='mb-4 relative z-[2]'>
+                        <textarea
+                            name='message'
+                            placeholder='Your Message *'
+                            aria-invalid='false'
+                            aria-required='true'
+                            className='outline-none'
+                            rows={5}
+                            {...formik.getFieldProps('message')}
+                        />
+                        {formik.touched.message && formik.errors.message ? (
+                            <div className='text-red-500 ml-2 mt-1'>{formik.errors.message}</div>
+                        ) : null}
+                    </div>
+                    <button className='relative z-10' type="submit">SEND MESSAGE</button>
+                </form>
+                <div className='absolute right-[50px] top-0 opacity-50 z-10'>
+                    <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png" alt="Icon" />
                 </div>
-                <div className='mb-4 relative z-[2]'>
-                    <input
-                        name='user_email'
-                        placeholder='Email *'
-                        className='outline-none'
-                        type="text"
-                        {...formik.getFieldProps('user_email')}
-                    />
-                    {formik.touched.user_email && formik.errors.user_email ? (
-                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.user_email}</div>
-                    ) : null}
-                </div>
-                <div className='mb-4 relative z-[2]'>
-                    <input
-                        name='subject'
-                        placeholder='Your Subject *'
-                        className='outline-none'
-                        type="text"
-                        {...formik.getFieldProps('subject')}
-                    />
-                    {formik.touched.subject && formik.errors.subject ? (
-                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.subject}</div>
-                    ) : null}
-                </div>
-                <div className='mb-4 relative z-[2]'>
-                    <textarea
-                        name='message'
-                        placeholder='Your Message *'
-                        aria-invalid='false'
-                        aria-required='true'
-                        className='outline-none'
-                        rows={5}
-                        {...formik.getFieldProps('message')}
-                    />
-                    {formik.touched.message && formik.errors.message ? (
-                        <div className='text-red-500 ml-2 mt-1'>{formik.errors.message}</div>
-                    ) : null}
-                </div>
-                <button className='relative z-10' type="submit">SEND MESSAGE</button>
-            </form>
-            <div className='absolute right-[50px] top-0 opacity-50 z-10'>
-                <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png" alt="Icon" />
             </div>
-        </div>
+        </>
     );
 }
 
