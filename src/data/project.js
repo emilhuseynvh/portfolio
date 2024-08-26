@@ -7,6 +7,7 @@ export const project = [
     {
         name: 'Iphone',
         img: 'assets/img/iphone.png',
+        link: 'https://apple-one-umber.vercel.app/'
     },
     {
         name: 'Sayt.az',
