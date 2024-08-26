@@ -1,8 +1,8 @@
 export const project = [
     {
-        name: 'emki production',
-        img: 'assets/img/emkipro.svg',
-        link: 'https://emkiproduction-tau.vercel.app/'
+        name: 'Techno İT',
+        img: 'assets/img/technoit.svg',
+        link: 'https://technoit-clone.vercel.app/'
     },
     {
         name: 'Iphone',
