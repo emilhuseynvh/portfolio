@@ -8,6 +8,7 @@ import AboutBox from '../Component/Card/AboutBox';
 import WorkTogether from '../Component/Card/WorkTogether';
 import Credentials from '../Component/Card/Credentials';
 import Aos from 'aos';
+import { Link } from 'react-router-dom';
 
 
 const Offer = () => {
@@ -51,13 +52,13 @@ const Offer = () => {
           <div data-aos="zoom-in" className='w-full m:w-1/2 lg:w-1/3 mt-0 lg:mt-4'>
             <AboutBox />
           </div>
-          <div data-aos="zoom-in" className='w-full m:w-1/2 lg:w-2/3 mt-4'>
+          <Link to='/contact' data-aos="zoom-in" className='w-full m:w-1/2 lg:w-2/3 mt-4'>
             <WorkTogether />
-          </div>
+          </Link>
         </div>
-        <div data-aos="zoom-in" className="w-full lg:w-1/4 mt-4">
+        <Link to='/credential' data-aos="zoom-in" className="w-full lg:w-1/4 mt-4">
           <Credentials />
-        </div>
+        </Link>
       </div>
     </div>
   )
