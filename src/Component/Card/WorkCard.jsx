@@ -1,5 +1,6 @@
 import Aos from 'aos';
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 
 const WorkCard = ({ item }) => {
@@ -15,7 +16,7 @@ const WorkCard = ({ item }) => {
     }, []);
 
     return (
-        <div data-aos="zoom-in" className='flex gap-4 w-full'>
+        <Link to={item.link} data-aos="zoom-in" className='flex gap-4 w-full'>
             <div className='card pt-4 pr-4 w-full pb-[26px] pl-4'>
                 <img className='bg-img' src="assets/img/card-bg.png" alt="Backgorund Image" />
                 <div className='rounded-[30px] mb-[16px]'>
@@ -29,7 +30,7 @@ const WorkCard = ({ item }) => {
                     <img src="assets/img/icon.svg" alt="" />
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 

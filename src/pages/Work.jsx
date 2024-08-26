@@ -33,7 +33,7 @@ const Work = () => {
 
       <div className="container flex gap-4 flex-col lg:hidden">
         <h1 data-aos="fade-up" className='mb-4 text-white text-[40px] sm:text-[50px] font-medium text-center'>ALL PROJECTS</h1>
-        <div className=' w-full  flex flex-col gap-4'>
+        <div  className=' w-full  flex flex-col gap-4'>
           {project.map((item, i) =>  <WorkCard key={i} item={item} />)}
         </div>
       </div>
