@@ -20,7 +20,7 @@ export const skills = [
         name: 'Javascript',
     },
     {
-        logo: 'assets/img/skills/jquery.png',
+        logo: 'assets/img/skills/jquery.svg',
         name: 'jQuery',
     },
     {

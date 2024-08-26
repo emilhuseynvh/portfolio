@@ -2,9 +2,12 @@ import Aos from 'aos';
 import React, { useEffect } from 'react'
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const CredentialsCard = () => {
+
+    const navigate = useNavigate()
+
     useEffect(() => {
         Aos.init({
             duration: 1500,
@@ -25,7 +28,7 @@ const CredentialsCard = () => {
                 <Link target='_blank' to='https://github.com/emilhuseynvh' className='credential-social-icon'><FaGithub /></Link>
                 <Link target='_blank' to='https://wa.me/qr/OUV3UFVVSDIGL1' className='credential-social-icon'><FaWhatsapp /></Link>
             </div>
-            <button className='w-full text-white duration-300 py-3 px-10 font-medium text-base rounded-2xl bg-dark hover:text-card_color hover:bg-white relative z-10'>Contact Me</button>
+            <button onClick={() => navigate('/contact')} className='w-full text-white duration-300 py-3 px-10 font-medium text-base rounded-2xl bg-dark hover:text-card_color hover:bg-white relative z-10'>Contact Me</button>
         </div>
     )
 }
