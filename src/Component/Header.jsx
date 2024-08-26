@@ -11,7 +11,7 @@ const Header = () => {
     <>
       <header className='text-white'>
         <div className="container mx-auto flex justify-between py-3 items-center md:relative fixed z-50 bg-card_color">
-          <img onClick={() => navigate('/')} className='cursor-pointer' src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/logo.svg" alt="Logo" />
+          <p onClick={() => navigate('/')} className='text-[23px] font-space cursor-pointer'>Code by Emil</p>
           <ul className='gap-[49px] hidden md:flex items-center text-base'>
             <Link to='/' className={`cursor-pointer duration-300 ${location.pathname === '/' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Home</Link>
             <Link to='/about' className={`cursor-pointer duration-300 ${location.pathname === '/about' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>About</Link>

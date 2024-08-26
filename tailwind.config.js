@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'space': ["Space Grotesk"]
+      },
       colors: {
         "dark" : '#323232',
         "white_" : '#f4f5f5',

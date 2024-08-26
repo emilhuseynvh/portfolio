@@ -16,12 +16,9 @@ const Slider = () => {
             <img className='bg-img' src="assets/img/card-bg.png" alt="Backgorund Image" />
             <div className='marquee overflow-hidden w-full'>
                 <div style={{ animation: 'marquee 8s linear infinite' }} className='w-full text-white_ flex'>
-                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my project <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /> </span>
-                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my project <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
-                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my project <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
-                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my project <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
-                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my project <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
-                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my project <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
+                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my portfolio <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
+                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my portfolio <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
+                    <span className='flex  whitespace-nowrap mr-3'>Welcome to my portfolio <img className='mx-3' src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/star1.svg" alt="" /></span>
                 </div>
             </div>
         </div>

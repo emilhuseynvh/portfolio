@@ -2,9 +2,6 @@ import React, { useEffect } from 'react'
 import { skills } from '../data/skills'
 import Aos from 'aos';
 
-console.log(skills);
-
-
 const Skills = () => {
     useEffect(() => {
         Aos.init({
