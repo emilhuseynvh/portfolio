@@ -18,7 +18,7 @@ const Skills = () => {
             {skills.map((item, i) => {
                 return (<div data-aos="zoom-in" key={i} className="card w-[44.5%] md:w-[30%] p-6">
                     <img className='bg-img' src="assets/img/card-bg.png" alt="Backgorund Image" />
-                    <div className='w-24 h-24 flex items-center justify-center mx-auto mb-4'>
+                    <div className='w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-4'>
                         <img className='w-full h-auto' src={item.logo} alt={item.name} />
                     </div>
                     <p className='text-center text-white text-base'>{item.name}</p>
