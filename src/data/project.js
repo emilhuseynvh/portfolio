@@ -1,7 +1,7 @@
 export const project = [
     {
         name: 'Techno İT',
-        img: 'assets/img/technoit.svg',
+        img: 'assets/img/technoit.png',
         link: 'https://technoit-clone.vercel.app/'
     },
     {
