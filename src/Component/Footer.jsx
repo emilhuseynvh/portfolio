@@ -1,9 +1,10 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 function Footer() {
 
   const location = useLocation()
+  const navigate = useNavigate()
 
   return (
     <div className='flex flex-col items-center pt-32 pb-[78px]'>
