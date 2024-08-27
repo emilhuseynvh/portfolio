@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <div className='flex flex-col items-center pt-32 pb-[78px]'>
-      <img src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/logo.svg" alt="Logo" />
+      <p onClick={() => navigate('/')} className='text-[23px] font-space cursor-pointer text-white'>Code by Emil</p>
       <ul className='flex mt-[33px] mb-[37px] gap-11'>
         <Link to='/' className={`cursor-pointer duration-300 ${location.pathname === '/' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Home</Link>
         <Link to='/about' className={`cursor-pointer duration-300 ${location.pathname === '/about' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>About</Link>

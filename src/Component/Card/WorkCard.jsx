@@ -16,7 +16,7 @@ const WorkCard = ({ item }) => {
     }, []);
 
     return (
-        <Link to={item.link} data-aos="zoom-in" className='flex gap-4 w-full'>
+        <Link target='_blank' to={item.link} data-aos="zoom-in" className='flex gap-4 w-full'>
             <div className='card pt-4 pr-4 w-full pb-[26px] pl-4'>
                 <img className='bg-img' src="assets/img/card-bg.png" alt="Backgorund Image" />
                 <div className='rounded-[30px] mb-[16px]'>
