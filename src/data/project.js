@@ -1,4 +1,10 @@
 export const project = [
+    
+    {
+        name: 'Guess.au',
+        img: 'assets/img/guess.png',
+        link: 'https://brendyol.apasni.me/'
+    },
     {
         name: 'Techno İT',
         img: 'assets/img/technoit.png',
@@ -13,11 +19,6 @@ export const project = [
         name: 'Sayt.az',
         img : 'assets/img/saytaz.png',
         link: 'https://sayt-az-clone.vercel.app/'
-    },
-    {
-        name: 'Xeberim.az',
-        img: 'assets/img/xeberimaz.png',
-        link: 'https://xeberim-az.vercel.app/'
     },
     {
         name: 'ATB Bank',
