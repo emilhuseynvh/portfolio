@@ -1,7 +1,7 @@
 export const project = [
     
     {
-        name: 'Guess.au',
+        name: 'Guess',
         img: 'assets/img/guess.png',
         link: 'https://brendyol.apasni.me/'
     },
