@@ -18,7 +18,7 @@ const ContactInput = () => {
 
     const formik = useFormik({
         initialValues: {
-            from_name: '',
+            user_name: '',
             user_email: '',
             subject: '',
             message: '',
