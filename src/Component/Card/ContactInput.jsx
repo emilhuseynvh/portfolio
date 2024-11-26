@@ -24,7 +24,7 @@ const ContactInput = () => {
             message: '',
         },
         validationSchema: Yup.object({
-            from_name: Yup.string()
+            user_name: Yup.string()
                 .min(3, 'Name must be at least 3 characters')
                 .max(30, 'Name must be 30 characters or less')
                 .required('Required'),
@@ -59,17 +59,17 @@ const ContactInput = () => {
                 <form ref={form} onSubmit={formik.handleSubmit}>
                     <div className='mb-4 relative z-[2]'>
                         <input
-                            name='from_name'
+                            name='user_name'
                             placeholder='Name *'
                             className='outline-none'
                             size={40}
                             minLength={3}
                             maxLength={50}
                             type="text"
-                            {...formik.getFieldProps('from_name')}
+                            {...formik.getFieldProps('user_name')}
                         />
-                        {formik.touched.from_name && formik.errors.from_name ? (
-                            <div className='text-red-500 ml-2 mt-1'>{formik.errors.from_name}</div>
+                        {formik.touched.user_name && formik.errors.user_name ? (
+                            <div className='text-red-500 ml-2 mt-1'>{formik.errors.user_name}</div>
                         ) : null}
                     </div>
                     <div className='mb-4 relative z-[2]'>
