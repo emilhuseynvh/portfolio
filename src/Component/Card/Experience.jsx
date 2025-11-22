@@ -1,5 +1,6 @@
 import Aos from 'aos';
 import React, { useEffect } from 'react'
+import { experince } from '../../data/experience';
 
 const Experience = () => {
     useEffect(() => {
@@ -15,16 +16,13 @@ const Experience = () => {
             <div>
                 <h4 className='text-white text-base mb-[23px] font-medium'>EXPERİENCE</h4>
                 <ul>
-                    <li>
-                        <p className='text-[#BCBCBC] opacity-60 font-medium mb-3 text-base'>2024</p>
-                        <h3 className='text-[18px] opacity-90 mb-[7px] text-white '>Front End Developer</h3>
-                        <p className='text-[#BCBCBC] opacity-60 font-normal text-sm '>MyMentorship intern and development agency</p>
+                    {experince.slice(0, 2).map(item => (
+                        <li key={item.id}>
+                        <p className='text-[#BCBCBC] opacity-60 font-medium mb-3 text-base'>{item.year}</p>
+                        <h3 className='text-[18px] opacity-90 mb-[7px] text-white '>{item.name}</h3>
+                        <p className='text-[#BCBCBC] opacity-60 font-normal text-sm '>{item.company}</p>
                     </li>
-                    <li className='mt-8'>
-                        <p className='text-[#BCBCBC] opacity-60 font-medium mb-3 text-base'>2023-2024</p>
-                        <h3 className='text-[18px] opacity-90 mb-[7px] text-white '>SMM Manager</h3>
-                        <p className='text-[#BCBCBC] opacity-60 font-normal text-sm '>Google Development Student Clubs</p>
-                    </li>
+                    ))}
                 </ul>
             </div>
             <div className='card-icon'>
