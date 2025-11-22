@@ -1,29 +1,29 @@
 export const project = [
     
     {
+        name: 'Handex',
+        img: 'assets/img/handex.png',
+        link: 'https://handex.edu.az/'
+    },
+    {
+        name: 'Drafts',
+        img: 'assets/img/drafts.png',
+        link: 'https://www.drafts.az/'
+    },
+    {
+        name: 'Yola',
+        img: 'assets/img/yola.png',
+        link: 'https://yola.az/'
+    },
+    {
+        name: 'Fleetruck',
+        img: 'assets/img/fleetruck.png',
+        link: 'https://fleetruckbk.ini.az/'
+    },
+    {
         name: 'Guess',
         img: 'assets/img/guess.png',
         link: 'https://brendyol.apasni.me/'
-    },
-    {
-        name: 'Techno İT',
-        img: 'assets/img/technoit.png',
-        link: 'https://technoit-clone.vercel.app/'
-    },
-    {
-        name: 'Iphone',
-        img: 'assets/img/iphone.png',
-        link: 'https://apple-one-umber.vercel.app/'
-    },
-    {
-        name: 'Sayt.az',
-        img : 'assets/img/saytaz.png',
-        link: 'https://sayt-az-clone.vercel.app/'
-    },
-    {
-        name: 'ATB Bank',
-        img: 'assets/img/atbbank.png',
-        link : 'https://atb-bank-clone.vercel.app/'
     },
     {
         name: 'Turbo.az',

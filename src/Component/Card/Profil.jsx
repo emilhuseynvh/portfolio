@@ -18,9 +18,9 @@ function Profil() {
                 <img className='rounded-br-[30px] rounded-tl-[30px]' src="assets/img/profile8.png" alt="Profile" />
             </div>
             <div className='pb-[30px]'>
-                <h5 className='text-[#BCBCBC] opacity-70 mb-1 text-base font-medium relative z-[2]'>Software Developer</h5>
+                <h5 className='text-[#BCBCBC] opacity-70 mb-1 text-base font-medium relative z-[2]'>Web Developer</h5>
                 <h1 className='text-4xl text-white_ relative z-[2]'>Emil Huseynov.</h1>
-                <p className='text-[#9f9f9f] text-sm relative z-[2] mt-4'>I am software developer based in Azerbaijan</p>
+                <p className='text-[#9f9f9f] text-sm relative z-[2] mt-4'>I am web developer based in Azerbaijan</p>
             </div>
             <div  className='card-icon'>
                 <img src="assets/img/icon.svg" alt="" />
