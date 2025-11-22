@@ -48,11 +48,19 @@ const Header = () => {
 
       {/* COMING SOON MODAL */}
       {showModal && (
-        <div onClick={() => setShowModal(false)} className='fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-[100] px-4'>
-          <div onClick={(e) => e.stopPropagation()} className='card p-8 md:p-12 max-w-md w-full text-center relative animate-[fadeIn_0.3s_ease-in-out]'>
+        <div
+          onClick={() => setShowModal(false)}
+          className='fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-[100] px-4'
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className='card p-8 md:p-12 max-w-md w-full text-center relative animate-[fadeIn_0.3s_ease-in-out]'
+          >
             <button
+              type="button"
               onClick={() => setShowModal(false)}
-              className='absolute top-4 right-4 text-[#9f9f9f] hover:text-white_ text-2xl transition-colors duration-300'
+              className='absolute top-4 right-4 text-[#9f9f9f] hover:text-white_ text-4xl transition-colors duration-300 w-10 h-10 flex items-center justify-center hover:bg-[#2a2a2a] rounded-lg cursor-pointer z-10'
+              aria-label="Close modal"
             >
               ×
             </button>
