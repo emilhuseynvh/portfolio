@@ -16,7 +16,7 @@ const AboutBox = () => {
             <img className='bg-img' src="assets/img/card-bg.png" alt="Backgorund Image" />
             <div className='about-box card mb-4 flex gap-5 items-center justify-center w-full p-[22px]'>
                 <Link target='_blank' to='https://github.com/emilhuseynvh' className='profile-icon'><FaGithub className='text-[32px]' /></Link>
-                <Link target='_blank' to='https://www.linkedin.com/in/emilhsynvh' className='profile-icon'><FaLinkedinIn  className='text-[32px] font-extrabold' /></Link>
+                <Link target='_blank' to='https://www.linkedin.com/in/emilhuseynvh' className='profile-icon'><FaLinkedinIn  className='text-[32px] font-extrabold' /></Link>
             </div>
             <div>
                 <h5>BLOG</h5>

@@ -23,7 +23,7 @@ const CredentialsCard = () => {
             <h4 className='text-white font-medium text-[28px] text-center'>Emil Huseynov</h4>
             <p className='text-[#BCBCBC] opacity-50 mb-[34px] text-center'>@emilhuseynvh</p>
             <div className=' gap-[10px] mb-9 flex justify-center'>
-                <Link target='_blank' to='https://www.linkedin.com/in/emilhsynvh' className='credential-social-icon'><FaLinkedinIn /></Link>
+                <Link target='_blank' to='https://www.linkedin.com/in/emilhuseynvh' className='credential-social-icon'><FaLinkedinIn /></Link>
                 <Link target='_blank' to='https://www.instagram.com/emilhuseynvh?igsh=Z3JzeXRzcHFxeGVz' className='credential-social-icon' ><FaInstagram /></Link>
                 <Link target='_blank' to='https://github.com/emilhuseynvh' className='credential-social-icon'><FaGithub /></Link>
                 <Link target='_blank' to='https://wa.me/qr/OUV3UFVVSDIGL1' className='credential-social-icon'><FaWhatsapp /></Link>
