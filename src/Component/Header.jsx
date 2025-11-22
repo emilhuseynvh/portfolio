@@ -3,9 +3,15 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [show, setShow] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   const location = useLocation();
 
   const navigate = useNavigate()
+
+  const handleWorldSkillsClick = (e) => {
+    e.preventDefault();
+    setShowModal(true);
+  }
 
   return (
     <>
@@ -16,6 +22,7 @@ const Header = () => {
             <Link to='/' className={`cursor-pointer duration-300 ${location.pathname === '/' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Home</Link>
             <Link to='/about' className={`cursor-pointer duration-300 ${location.pathname === '/about' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>About</Link>
             <Link to='/work' className={`cursor-pointer duration-300 ${location.pathname === '/work' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Works</Link>
+            <span onClick={handleWorldSkillsClick} className='cursor-pointer duration-300 text-[#9f9f9f] hover:text-white_'>WorldSkills</span>
             <Link to='/contact' className={`text-[#9f9f9f] hover:text-white_ cursor-pointer duration-300 ${location.pathname === '/contact' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'} `}>Contact</Link>
           </ul>
           <a href='assets/pdf/Emil Huseynov.pdf' download className='bg-dark text-white_ hover:text-dark hover:bg-white duration-300 hidden md:block text-base font-medium py-3 px-[33px] rounded-2xl'> Download my CV </a>
@@ -35,8 +42,27 @@ const Header = () => {
         <Link onClick={() => setShow(true)} to='/' className={`pb-5 cursor-pointer ${location.pathname === '/' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>Home</Link>
         <Link onClick={() => setShow(true)} to='/about' className={`pb-5 cursor-pointer ${location.pathname === '/about' ? 'text-white_' : 'text-[#9f9f9f] hover:text-white_'}`}>About</Link>
         <Link onClick={() => setShow(true)} to='/work' className='pb-5 cursor-pointer text-[#9f9f9f] hover:text-white_'>Works</Link>
+        <span onClick={(e) => { setShow(true); handleWorldSkillsClick(e); }} className='pb-5 cursor-pointer text-[#9f9f9f] hover:text-white_'>WorldSkills</span>
         <Link onClick={() => setShow(true)} to='/contact' className='pb-5 cursor-pointer text-[#9f9f9f] hover:text-white_'>Contact</Link>
       </div>
+
+      {/* COMING SOON MODAL */}
+      {showModal && (
+        <div onClick={() => setShowModal(false)} className='fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-[100] px-4'>
+          <div onClick={(e) => e.stopPropagation()} className='card p-8 md:p-12 max-w-md w-full text-center relative animate-[fadeIn_0.3s_ease-in-out]'>
+            <button
+              onClick={() => setShowModal(false)}
+              className='absolute top-4 right-4 text-[#9f9f9f] hover:text-white_ text-2xl transition-colors duration-300'
+            >
+              ×
+            </button>
+            <div className='text-6xl mb-6'>🚧</div>
+            <h2 className='text-white text-3xl font-bold mb-4'>Coming Soon</h2>
+            <p className='text-[#BCBCBC] text-lg mb-2'>WorldSkills page is under development</p>
+            <p className='text-[#9f9f9f] text-sm'>Check back soon for updates!</p>
+          </div>
+        </div>
+      )}
     </>
   );
 };

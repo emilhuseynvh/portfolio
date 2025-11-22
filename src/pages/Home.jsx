@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Profil from '../Component/Card/Profil'
 import Slider from '../Component/Card/Slider'
 import Credentials from '../Component/Card/Credentials'
@@ -8,11 +8,13 @@ import Offer from '../Component/Card/Offer'
 import AboutBox from '../Component/Card/AboutBox'
 import Number from '../Component/Card/Number'
 import WorkTogether from '../Component/Card/WorkTogether'
+import WorldSkillsCard from '../Component/Card/WorldSkillsCard'
 import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
 
   const navigate = useNavigate()
+  const [showModal, setShowModal] = useState(false)
 
   return (
     <main>
@@ -51,7 +53,7 @@ const Home = () => {
             <WorkTogether />
           </div>
         </div>
-      </div>
+        </div>
     </main>
   )
 }
