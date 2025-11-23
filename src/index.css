@@ -136,12 +136,17 @@ h2 {
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(100%);
+    from {
+        transform: translateX(0);
     }
-    100% {
-        transform: translateX(-100%);
+    to {
+        transform: translateX(-50%);
     }
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden;
 }
 
 /*  N U M B E R   E L E M  EN T   */

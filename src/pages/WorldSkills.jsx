@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import Aos from 'aos'
 import { useNavigate } from 'react-router-dom'
 import WorkTogether from '../Component/Card/WorkTogether'
+import { destination, worldskills } from '../data/worldskills'
 
 const WorldSkills = () => {
   const navigate = useNavigate()
@@ -14,25 +15,6 @@ const WorldSkills = () => {
     })
   }, [])
 
-  const achievements = [
-    {
-      title: "WorldSkills Azerbaijan 2024",
-      position: "1-ci yer",
-      badge: "🥇",
-      description: "WorldSkills Azerbaijan müsabiqəsində Web Technologies kompetensiyası üzrə birinci yeri tutaraq ölkə səviyyəsində ən yaxşı nəticə göstərdim.",
-      image: "worldskills-azerbaijan.jpg",
-      details: "Web Technologies | 3 günlük müsabiqə | 50+ iştirakçı"
-    },
-    {
-      title: "TurkicSkills 2024",
-      position: "3-cü yer",
-      badge: "🥉",
-      description: "Türk dövlətləri arasında keçirilən TurkicSkills müsabiqəsində üçüncü yeri tutaraq beynəlxalq səviyyədə uğur qazandım.",
-      image: "turkicskills.jpg",
-      details: "Qazaxıstan | 7 ölkə | Beynəlxalq müsabiqə"
-    }
-  ]
-
   return (
     <div className='container mx-auto pb-8'>
       {/* HERO */}
@@ -41,13 +23,13 @@ const WorldSkills = () => {
           WorldSkills
         </h1>
         <p className='text-[#BCBCBC] text-lg mt-4'>
-          Azərbaycanda və beynəlxalq arenada əldə etdiyim uğurlar
+          My successes in Azerbaijan and the international arena
         </p>
       </div>
 
       {/* ACHIEVEMENTS */}
       <div className='space-y-16 mb-16'>
-        {achievements.map((achievement, index) => (
+        {worldskills.map((achievement, index) => (
           <div
             key={index}
             data-aos="fade-up"
@@ -55,10 +37,10 @@ const WorldSkills = () => {
           >
             {/* Image */}
             <div className='w-full lg:w-1/2'>
-              <div className='aspect-[16/10] bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-3xl flex items-center justify-center relative overflow-hidden border border-[#3a3a3a]'>
+              <div className='aspect-[16/12] bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-3xl flex items-center justify-center relative overflow-hidden border border-[#3a3a3a]'>
                 <div className='text-center'>
                   <div className='text-8xl mb-4'>{achievement.badge}</div>
-                  <p className='text-[#9f9f9f] text-sm'>Şəkil: {achievement.image}</p>
+                  <img src={achievement.image} alt={achievement.description} />
                 </div>
               </div>
             </div>
@@ -85,7 +67,7 @@ const WorldSkills = () => {
       {/* GALLERY */}
       <div data-aos="fade-up" className='mb-16'>
         <h2 className='text-white text-4xl md:text-5xl font-bold text-center mb-12'>
-          Foto Qalereya
+          Photo Gallery
         </h2>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
@@ -115,16 +97,11 @@ const WorldSkills = () => {
       {/* TIMELINE */}
       <div data-aos="fade-up" className='mb-16'>
         <h2 className='text-white text-4xl md:text-5xl font-bold text-center mb-12'>
-          Mənim Səyahətim
+          My Journey
         </h2>
 
         <div className='max-w-3xl mx-auto space-y-8'>
-          {[
-            { date: 'Yanvar 2024', title: 'Hazırlığa başladım', desc: 'Web Technologies üzrə intensiv məşqlər' },
-            { date: 'Mart 2024', title: 'Regional mərhələ', desc: 'Regional səviyyədə birinci yer' },
-            { date: 'May 2024', title: 'WorldSkills Azerbaijan', desc: 'Milli müsabiqədə qızıl medal' },
-            { date: 'Sentyabr 2024', title: 'TurkicSkills', desc: 'Beynəlxalq arenada bürünc medal' }
-          ].map((item, index) => (
+          {destination.map((item, index) => (
             <div key={index} data-aos="fade-right" data-aos-delay={index * 100} className='flex gap-6'>
               <div className='flex flex-col items-center'>
                 <div className='w-4 h-4 rounded-full bg-white_'></div>

@@ -8,7 +8,7 @@ import Credentials from "../pages/Credentials"
 import Offer from "../pages/Offer"
 import Error from "../pages/Error"
 import Skills from "../pages/Skills"
-// import WorldSkills from "../pages/WorldSkills"
+import WorldSkills from "../pages/WorldSkills"
 
 const token = localStorage.getItem('token')
 
@@ -24,7 +24,7 @@ export const route = createBrowserRouter(
                 <Route path="credential" element={<Credentials />} />
                 <Route path="offer" element={<Offer />} />
                 <Route path="skills" element={<Skills />} />
-                {/* <Route path="worldskills" element={<WorldSkills />} /> */}
+                <Route path="worldskills" element={<WorldSkills />} />
                 <Route path="*" element={<Error />} />
             </Route>
         </>

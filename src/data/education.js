@@ -13,5 +13,4 @@ export const education = [
         company: 'Baku Engineering University',
         desc: 'I am currently pursuing a degree in Computer Science at Baku Engineering University. My studies focus on the core principles of software development, algorithms, data structures, and system design. Through my coursework, I am gaining a strong foundation in programming languages, computational theory, and software engineering practices. My education is equipping me with the skills necessary to solve complex technical challenges and innovate in the field of technology. I am passionate about applying my knowledge to real-world projects and continuously expanding my expertise in the ever-evolving landscape of computer science.'
     }
-    
 ]
