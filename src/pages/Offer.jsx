@@ -52,7 +52,7 @@ const Offer = () => {
           <div data-aos="zoom-in" className='w-full m:w-1/2 lg:w-1/3 mt-0 lg:mt-4'>
             <AboutBox />
           </div>
-          <div className='md:my-0 my-4'>
+          <div className='md:mb-0 mb-4 w-full mt-4 md:mt-4'>
             <Link to='/contact' data-aos="zoom-in" className='w-full m:w-1/2 lg:w-2/3 mt-4'>
             <WorkTogether />
           </Link>
