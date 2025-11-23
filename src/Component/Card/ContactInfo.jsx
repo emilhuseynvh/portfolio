@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { CiMail } from "react-icons/ci";
 import { FiPhone } from "react-icons/fi";
 import { IoLocationOutline } from "react-icons/io5";
-import { FaDribbble, FaInstagram } from "react-icons/fa";
-import { CiTwitter } from "react-icons/ci";
+import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import Aos from 'aos';
+import { Link } from 'react-router-dom';
 
 const ContactInfo = () => {
     useEffect(() => {
@@ -52,9 +52,9 @@ const ContactInfo = () => {
 
             <p data-aos="fade-up" className='text-base mb-[29px] text-white'>SOCIAL INFO</p>
             <div className='flex gap-5'>
-                <div data-aos="zoom-in" className='social-icon'><FaDribbble /></div>
-                <div data-aos="zoom-in" className='social-icon'><CiTwitter /></div>
-                <div data-aos="zoom-in" className='social-icon'><FaInstagram /></div>
+                <Link target='_blank' to='https://github.com/emilhuseynvh' data-aos="zoom-in" className='social-icon'><FaGithub /></Link>
+                <Link target='_blank' to='https://www.linkedin.com/in/emilhuseynvh' data-aos="zoom-in" className='social-icon'><FaLinkedinIn /></Link>
+                <Link target='_blank' to='https://www.instagram.com/emilhuseynvh?igsh=Z3JzeXRzcHFxeGVz' data-aos="zoom-in" className='social-icon'><FaInstagram /></Link>
             </div>
         </div>
     )
