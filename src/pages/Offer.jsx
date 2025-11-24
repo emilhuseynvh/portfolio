@@ -9,6 +9,7 @@ import WorkTogether from '../Component/Card/WorkTogether';
 import Credentials from '../Component/Card/Credentials';
 import Aos from 'aos';
 import { Link } from 'react-router-dom';
+import SEO from '../Component/SEO';
 
 
 const Offer = () => {
@@ -21,6 +22,11 @@ const Offer = () => {
 }, []);
   return (
     <div className=' container mx-auto  h-full gap-4'>
+      <SEO
+        title="Services - Emil Huseynov"
+        description="Explore my web development services including frontend development, backend solutions, API design, and full-stack applications."
+        keywords="Web Development Services, Frontend Development, Backend Development, Full Stack Services, API Development, React Development, Node.js Development, Custom Web Applications, Software Solutions"
+      />
       <div className='m:flex gap-4'>
         <div data-aos="zoom-in" className='pt-[91px] card px-[75px] pb-[90px] m:mb-0 mb-12'>
           <ul className=' flex flex-col gap-36'>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import WorkCard from '../Component/Card/WorkCard'
 import { project } from '../data/project';
 import Aos from 'aos';
+import SEO from '../Component/SEO';
 
 
 const Work = () => {
@@ -14,6 +15,11 @@ const Work = () => {
   }, []);
   return (
     <>
+      <SEO
+        title="Projects - Emil Huseynov"
+        description="Browse my portfolio of web development projects. See my work in React, Node.js, and modern web technologies."
+        keywords="Web Development Projects, Portfolio, React Projects, Node.js Projects, Full Stack Projects, JavaScript Applications, Web Apps, Emil Huseynov Projects, Software Development"
+      />
       <div className='container lg:flex mx-auto hidden gap-4 w-full'>
         <div className=' w-1/3  flex flex-col gap-4'>
           {project.map((item, i) => i < 2 && <WorkCard key={i} item={item} />)}

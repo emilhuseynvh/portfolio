@@ -8,6 +8,7 @@ import AboutBox from '../Component/Card/AboutBox';
 import WorkTogether from '../Component/Card/WorkTogether';
 import Credentials from '../Component/Card/Credentials';
 import { useNavigate } from 'react-router-dom';
+import SEO from '../Component/SEO';
 
 const About = () => {
 
@@ -22,6 +23,11 @@ const About = () => {
   }, []);
   return (
     <div className='container mx-auto'>
+      <SEO
+        title="About - Emil Huseynov"
+        description="Learn more about Emil Huseynov, a Full Stack Developer and WorldSkills champion. Explore my experience, education, and technical expertise."
+        keywords="Emil Huseynov, About, Full Stack Developer, WorldSkills Champion, Web Developer Biography, Professional Experience, Education, Technical Skills, Azerbaijan Developer"
+      />
       {/*  F I R S T   L I N E   */}
       <div className='lg:flex gap-12'>
         <div className='lg:w-1/3 w-full flex justify-center'>

@@ -4,6 +4,7 @@ import './../css/credential.css'
 import CredentialsExperience from '../Component/Card/CredentialsExperience'
 import CredentialsEducation from '../Component/Card/CredentialsEducation'
 import Aos from 'aos'
+import SEO from '../Component/SEO'
 
 const Credentials = () => {
     useEffect(() => {
@@ -15,6 +16,11 @@ const Credentials = () => {
     }, []);
     return (
         <div className='container mx-auto flex-col md:flex-row flex gap-20'>
+            <SEO
+                title="Credentials - Emil Huseynov"
+                description="View my professional credentials, certifications, and technical qualifications in web development and software engineering."
+                keywords="Developer Credentials, Certifications, Professional Qualifications, Technical Skills, Web Development Certificates, Software Engineering Credentials, Emil Huseynov Certifications"
+            />
             <div className='w-full md:w-[370px] md:h-[500px] relative md:sticky medium:top-4'>
                 <CredentialsCard />
             </div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { skills } from '../data/skills'
 import Aos from 'aos';
+import SEO from '../Component/SEO';
 
 const Skills = () => {
     useEffect(() => {
@@ -12,6 +13,11 @@ const Skills = () => {
     }, []);
     return (
         <div className='container mx-auto flex flex-wrap gap-8 justify-center'>
+            <SEO
+                title="Skills - Emil Huseynov"
+                description="My technical skills and expertise in modern web technologies including React, Node.js, TypeScript, MongoDB, and more."
+                keywords="Technical Skills, React, Node.js, TypeScript, JavaScript, MongoDB, Express.js, Next.js, Tailwind CSS, Git, REST API, GraphQL, Web Technologies, Programming Languages"
+            />
             {skills.map((item, i) => {
                 return (<div data-aos="zoom-in" key={i} className="card w-[44.5%] md:w-[30%] p-6">
                     <img className='bg-img' src="assets/img/card-bg.png" alt="Backgorund Image" />
