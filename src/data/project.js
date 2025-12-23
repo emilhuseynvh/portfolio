@@ -25,15 +25,15 @@ export const project = [
         is_private: true
     },
     {
-        name: 'Guess',
-        img: 'assets/img/guess.png',
-        link: 'https://brendyol.apasni.me/',
+        name: 'KendeGet',
+        img: 'assets/img/kendeget.png',
+        link: 'https://kendeget.com',
         is_private: false
     },
     {
-        name: 'Turbo.az',
-        img: 'assets/img/turboaz.png',
-        link: 'https://turbo-az-clone.vercel.app/',
+        name: 'Guess',
+        img: 'assets/img/guess.png',
+        link: 'https://brendyol.apasni.me/',
         is_private: false
     }
 ];
