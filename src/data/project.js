@@ -31,9 +31,9 @@ export const project = [
         is_private: false
     },
     {
-        name: 'Guess',
-        img: 'assets/img/guess.png',
-        link: 'https://brendyol.apasni.me/',
+        name: 'Tazbeeb',
+        img: 'assets/img/tazbeeb.png',
+        link: 'https://tazbeeb.com/',
         is_private: false
     }
 ];
