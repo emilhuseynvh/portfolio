@@ -32,7 +32,7 @@ export const project = [
     },
     {
         name: 'Tazbeeb',
-        img: 'assets/img/tazbeeb.png',
+        img: 'assets/img/tazbeeb2.png',
         link: 'https://tazbeeb.com/',
         is_private: false
     }
